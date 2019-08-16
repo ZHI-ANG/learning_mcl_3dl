@@ -29,7 +29,7 @@
 
 预测当前状态下粒子的分布是通过带高斯噪声的里程计数据获得的。同时使用IMU补偿里程计数据。
 
-里程计模型使用相对运动信息，记录的是机器人内部坐标系下的运动过程，该坐标系和世界坐标的关系未知。尽管如此，但是通过计算t和t-1时刻的相对运动，可以得到机器人在![](http://latex.codecogs.com/gif.latex?\delta t)时间内运动的平移![](http://latex.codecogs.com/gif.latex?trans)和旋转![](http://latex.codecogs.com/gif.latex?rot)。可以将![](http://latex.codecogs.com/gif.latex?\delta t)时间内的运动分解为两个旋转和一个平移。
+里程计模型使用相对运动信息，记录的是机器人内部坐标系下的运动过程，该坐标系和世界坐标的关系未知。尽管如此，但是通过计算t和t-1时刻的相对运动，可以得到机器人在![](http://latex.codecogs.com/gif.latex?\ \delta t)时间内运动的平移![](http://latex.codecogs.com/gif.latex?trans)和旋转![](http://latex.codecogs.com/gif.latex?rot)。可以将![](http://latex.codecogs.com/gif.latex?\ \delta t)时间内的运动分解为两个旋转和一个平移。
 
 #### c. 重采样
 
